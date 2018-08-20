@@ -1,0 +1,298 @@
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\ApplicationInsights.config
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\csc.exe
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\csc.exe.config
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\csc.rsp
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\csi.exe
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\csi.rsp
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\System.AppContext.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\vbc.exe
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\vbc.exe.config
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\vbc.rsp
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\CucuruchoCafe.dll.config
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\CucuruchoCafe.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\CucuruchoCafe.pdb
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Antlr3.Runtime.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\EntityFramework.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\EntityFramework.SqlServer.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.Web.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Newtonsoft.Json.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Owin.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\SQLCloud.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Net.Http.Formatting.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Web.Helpers.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Web.Http.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Web.Http.WebHost.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Web.Mvc.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Web.Optimization.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Web.Razor.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Web.WebPages.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Web.WebPages.Razor.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\WebGrease.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Azure.ActiveDirectory.GraphClient.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\CFDI.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\CFDI33.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Ionic.Zip.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Cassandra.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Stimulsoft.Report.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Data.SQLite.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\CassiniDev4-lib.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Data.Services.Client.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Data.OData.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Data.Edm.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Reportes.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\SSLMain.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\ThoughtWorks.QRCode.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Extensions.Logging.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\LZ4.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Stimulsoft.Base.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Spatial.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Net.Http.Formatting.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Web.Http.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Web.Http.WebHost.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Web.Helpers.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Web.Mvc.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Web.Optimization.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Web.Razor.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Web.WebPages.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\System.Web.WebPages.Razor.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Antlr3.Runtime.pdb
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Newtonsoft.Json.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\EntityFramework.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\EntityFramework.SqlServer.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.Web.xml
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\System.Web.Razor.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\EntityFramework.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.Owin.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\obj\Release\CucuruchoCafe.dll
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\obj\Release\CucuruchoCafe.pdb
+C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\obj\Release\CucuruchoWeb.csprojResolveAssemblyReference.cache
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\ApplicationInsights.config
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\csc.exe
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\csc.exe.config
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\csc.rsp
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\csi.exe
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\csi.rsp
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\System.AppContext.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\vbc.exe
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\vbc.exe.config
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\vbc.rsp
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\VBCSCompiler.exe
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\CucuruchoCafe.dll.config
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\CucuruchoCafe.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\CucuruchoCafe.pdb
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Antlr3.Runtime.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\EntityFramework.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\EntityFramework.SqlServer.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.Web.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.ApplicationInsights.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Newtonsoft.Json.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Owin.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\SQLCloud.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Net.Http.Formatting.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Web.Helpers.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Web.Http.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Web.Http.WebHost.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Web.Mvc.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Web.Optimization.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Web.Razor.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Web.WebPages.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Web.WebPages.Razor.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\WebGrease.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Azure.ActiveDirectory.GraphClient.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\CFDI.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\CFDI33.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Ionic.Zip.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Cassandra.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Stimulsoft.Report.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Data.SQLite.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\CassiniDev4-lib.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Data.Services.Client.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Data.OData.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Data.Edm.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Reportes.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\SSLMain.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\ThoughtWorks.QRCode.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Extensions.Logging.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\LZ4.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Stimulsoft.Base.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Spatial.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Net.Http.Formatting.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Web.Http.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Web.Http.WebHost.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Web.Helpers.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Web.Mvc.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Web.Optimization.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Web.Razor.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Web.WebPages.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\System.Web.WebPages.Razor.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Antlr3.Runtime.pdb
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Newtonsoft.Json.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\EntityFramework.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\EntityFramework.SqlServer.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.ApplicationInsights.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\Microsoft.AI.Web.xml
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\System.Web.Helpers.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\System.Web.Mvc.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\System.Web.Optimization.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\System.Web.Razor.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\System.Web.WebPages.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\EntityFramework.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.Owin.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\obj\Release\CucuruchoWeb.csprojResolveAssemblyReference.cache
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\obj\Release\CucuruchoCafe.dll
+C:\Users\ERICK\Desktop\Dann\CUCURUCHO\CucuruchoWeb\HuvicaTest1\obj\Release\CucuruchoCafe.pdb

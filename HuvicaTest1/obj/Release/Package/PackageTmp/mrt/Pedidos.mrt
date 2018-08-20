@@ -1,0 +1,893 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="3">
+      <encabezado Ref="2" type="DataTableSource" isKey="true">
+        <Alias>encabezado</Alias>
+        <Columns isList="true" count="38">
+          <value>pedido,System.Int32</value>
+          <value>F_EMISION,System.DateTime</value>
+          <value>CLIENTE,System.String</value>
+          <value>VEND,System.String</value>
+          <value>IMPORTE,System.Double</value>
+          <value>DESCUENTO,System.Double</value>
+          <value>IMPUESTO,System.Double</value>
+          <value>PRECIO,System.String</value>
+          <value>COSTO,System.Double</value>
+          <value>ALMACEN,System.Int32</value>
+          <value>ESTADO,System.String</value>
+          <value>OBSERV,System.String</value>
+          <value>TIPO_CAM,System.Double</value>
+          <value>MONEDA,System.String</value>
+          <value>DESC1,System.Double</value>
+          <value>DESC2,System.Double</value>
+          <value>DESC3,System.Double</value>
+          <value>DESC4,System.Double</value>
+          <value>DESC5,System.Double</value>
+          <value>DATOS,System.String</value>
+          <value>DESGLOSE,System.Int16</value>
+          <value>COBRANZA,System.Int32</value>
+          <value>USUARIO,System.String</value>
+          <value>USUFECHA,System.DateTime</value>
+          <value>USUHORA,System.String</value>
+          <value>RELACION,System.String</value>
+          <value>PEDCLI,System.String</value>
+          <value>AplicarDes,System.Int16</value>
+          <value>Autorizado,System.Int16</value>
+          <value>Entrega,System.DateTime</value>
+          <value>Tipo,System.String</value>
+          <value>no_ped,System.Int32</value>
+          <value>sucremota,System.String</value>
+          <value>cotizaremota,System.Int32</value>
+          <value>auto,System.Int16</value>
+          <value>donativo,System.Int16</value>
+          <value>SSMA_TimeStamp,System.Byte[]</value>
+          <value>ocupado,System.Int16</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>encabezado</Name>
+        <NameInSource>DatosMyBusiness.encabezado</NameInSource>
+      </encabezado>
+      <partidas Ref="3" type="DataTableSource" isKey="true">
+        <Alias>partidas</Alias>
+        <Columns isList="true" count="24">
+          <value>pedido,System.Int32</value>
+          <value>ARTICULO,System.String</value>
+          <value>CANTIDAD,System.Double</value>
+          <value>SURTIDO,System.Double</value>
+          <value>POR_SURT,System.Double</value>
+          <value>PRECIO,System.Double</value>
+          <value>DESCUENTO,System.Double</value>
+          <value>IMPUESTO,System.Single</value>
+          <value>OBSERV,System.String</value>
+          <value>ID_SALIDA,System.Int32</value>
+          <value>Usuario,System.String</value>
+          <value>UsuFecha,System.DateTime</value>
+          <value>UsuHora,System.String</value>
+          <value>Almacen,System.Int32</value>
+          <value>Lista,System.Int32</value>
+          <value>Clave,System.String</value>
+          <value>PRCANTIDAD,System.Int32</value>
+          <value>PRDESCRIP,System.String</value>
+          <value>backorder,System.Int32</value>
+          <value>donativo,System.Int16</value>
+          <value>SSMA_TimeStamp,System.Byte[]</value>
+          <value>GUID,System.String</value>
+          <value>PUID,System.String</value>
+          <value>MiImpuesto,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>partidas</Name>
+        <NameInSource>DatosMyBusiness.partidas</NameInSource>
+      </partidas>
+      <cliente Ref="4" type="DataTableSource" isKey="true">
+        <Alias>cliente</Alias>
+        <Columns isList="true" count="53">
+          <value>CLIENTE,System.String</value>
+          <value>NOMBRE,System.String</value>
+          <value>CALLE,System.String</value>
+          <value>NUMERO,System.String</value>
+          <value>COLONIA,System.String</value>
+          <value>POBLA,System.String</value>
+          <value>CIUDAD,System.String</value>
+          <value>ESTADO,System.String</value>
+          <value>PAIS,System.String</value>
+          <value>TELEFONO,System.String</value>
+          <value>DIAS,System.Double</value>
+          <value>CREDITO,System.Double</value>
+          <value>DESC1,System.Double</value>
+          <value>DESC2,System.Double</value>
+          <value>DESC3,System.Double</value>
+          <value>DESC4,System.Double</value>
+          <value>DESC5,System.Double</value>
+          <value>RFC,System.String</value>
+          <value>TIPO,System.String</value>
+          <value>CONTACTO,System.String</value>
+          <value>COBRADOR,System.String</value>
+          <value>VEND,System.String</value>
+          <value>PRECIO,System.Double</value>
+          <value>CP,System.String</value>
+          <value>PROSPECT,System.Int16</value>
+          <value>REVISION,System.String</value>
+          <value>OBSERV,System.String</value>
+          <value>ZONA,System.String</value>
+          <value>CORREO,System.String</value>
+          <value>URL,System.String</value>
+          <value>SALDO,System.Double</value>
+          <value>USUARIO,System.String</value>
+          <value>USUHORA,System.String</value>
+          <value>USUFECHA,System.DateTime</value>
+          <value>PROVEEDOR,System.String</value>
+          <value>CURB,System.String</value>
+          <value>CORTE,System.Int32</value>
+          <value>COBRO,System.String</value>
+          <value>CONCEPTO,System.String</value>
+          <value>INGRESO,System.DateTime</value>
+          <value>bloqueado,System.Int16</value>
+          <value>claveweb,System.String</value>
+          <value>emailcobranza,System.String</value>
+          <value>embarcar,System.String</value>
+          <value>foto,System.String</value>
+          <value>puntos,System.Int32</value>
+          <value>recomendado,System.String</value>
+          <value>comision,System.Double</value>
+          <value>nuevo,System.String</value>
+          <value>SSMA_TimeStamp,System.Byte[]</value>
+          <value>localidad,System.String</value>
+          <value>numerointerior,System.String</value>
+          <value>numeroexterior,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>cliente</Name>
+        <NameInSource>DatosMyBusiness.cliente</NameInSource>
+      </cliente>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="2">
+      <value>MyVariables,Empresa,Empresa,System.String,,False,False</value>
+      <value>MyVariables,Usuario,Usuario,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="5" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>White</Brush>
+      <Components isList="true" count="3">
+        <PageHeaderBand1 Ref="6" type="PageHeaderBand" isKey="true">
+          <Brush>White</Brush>
+          <ClientRectangle>0,4,190,122</ClientRectangle>
+          <Components isList="true" count="22">
+            <Image1 Ref="7" type="Image" isKey="true">
+              <Border>Left, Right;[137:0:0];1;None;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>10,-4,50,48</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <File>C:\Users\ERICK\Pictures\imagenesPartner\_LOGOTIPO PARTNERS_01.png</File>
+              <Image>/9j/4AAQSkZJRgABAQEAAAAAAAD/4gKgSUNDX1BST0ZJTEUAAQEAAAKQbGNtcwQwAABtbnRyUkdCIFhZWiAH3wAHABgABgAzACdhY3NwQVBQTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWxjbXMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtkZXNjAAABCAAAADhjcHJ0AAABQAAAAE53dHB0AAABkAAAABRjaGFkAAABpAAAACxyWFlaAAAB0AAAABRiWFlaAAAB5AAAABRnWFlaAAAB+AAAABRyVFJDAAACDAAAACBnVFJDAAACLAAAACBiVFJDAAACTAAAACBjaHJtAAACbAAAACRtbHVjAAAAAAAAAAEAAAAMZW5VUwAAABwAAAAcAHMAUgBHAEIAIABiAHUAaQBsAHQALQBpAG4AAG1sdWMAAAAAAAAAAQAAAAxlblVTAAAAMgAAABwATgBvACAAYwBvAHAAeQByAGkAZwBoAHQALAAgAHUAcwBlACAAZgByAGUAZQBsAHkAAAAAWFlaIAAAAAAAAPbWAAEAAAAA0y1zZjMyAAAAAAABDEoAAAXj///zKgAAB5sAAP2H///7ov///aMAAAPYAADAlFhZWiAAAAAAAABvlAAAOO4AAAOQWFlaIAAAAAAAACSdAAAPgwAAtr5YWVogAAAAAAAAYqUAALeQAAAY3nBhcmEAAAAAAAMAAAACZmYAAPKnAAANWQAAE9AAAApbcGFyYQAAAAAAAwAAAAJmZgAA8qcAAA1ZAAAT0AAACltwYXJhAAAAAAADAAAAAmZmAADypwAADVkAABPQAAAKW2Nocm0AAAAAAAMAAAAAo9cAAFR7AABMzQAAmZoAACZmAAAPXP/bAEMACAYGBwYFCAcHBwkJCAoMFA0MCwsMGRITDxQdGh8eHRocHCAkLicgIiwjHBwoNyksMDE0NDQfJzk9ODI8LjM0Mv/bAEMBCQkJDAsMGA0NGDIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIAZABkAMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABgcEBQECAwj/xABTEAABAwMCAgUHCAYECwcFAAABAAIDBAURBiESMQcTQVFhFBUiVXGB0RYyVpGTlJXjIzNCUqGxCHKywRckNDU2N0ZidZKiJUNzgtLh8EV0s8Lx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AL/REQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQERcHkgw7ldaCz0T6241cVLTMxxSSuwAV2oLnRXSkZVUFXFUwP5SRODh/BfMnT7Xyv1+aRtRI6FlNGTEX5Y12/IdhUm/o83KWnhr6N1LXyR1ErS2VkWYIyBvk52JQfQCIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAhIC0mpdU2vSVofcbrP1cQ2Y0bukd3NHaVSFz/pHXF1Q8Wyy00cIPomoeXOx44wEH0TkFdJ5RBTySnkxpd9QVC2P+kcX1LI73ZmMhJwZaVxy3x4Tz+tXVb7pQaksjay3VLKikqYyGvae8YII7D4IPinUV0mvWoK+41D3OlqJ3POewZ2H1L6H/AKPN0bU6Mqrf1LmupKku6zGz+IZ594wvnG705pLvW0xBBinewj2OIUq6O+ke5aEr8R/p7bM4GemPb2cTe4oPsdFg2i60t7tVNcqJ4fTVMYew+B7/ABWcgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAh5Iurtmk+CD5N6a9US33XVRRNkPkduPURsztxftH69lWi2uonvm1JdJX5LnVcpd7eIrVICtLoc6Q4dIXKpo7rUOZaqhhedi7gkG4IA7+X1KrUyg2mo6+G66juVwp2lsNTUySsaeYBcSFq0XeNjpHtY0FznHAA5koPp3+jzWVVRoergmJMNPVFsJPcQCQPerfUT6ONNjS2h7dbnN4ZyzrZ/67tz8FLEBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQFweRWtvF+tlhp2T3SsjpIXu4WySZ4c92cLRO6UtEN56jo/+r4IPnm66be60apvz4s08V7EUeR84cbg7fu3CjN50vWUN7uVJFTuMVGOtcewRnBB+pwX0RqHVXRrfLOLXLqCmhpjUsqHthjcA9wdxEH0e0813qtYdFlf10c1zpXeVSRul9B44y3AaCccthtyQUhT9E2pajy1radvWUfA50eHZkY7k9hxhw8M5UcrNIago6yemfZq8uiJyRTvIIBxnlyX25A6GaJkkLmuic0FhYcgjsx4L14B3IPgiopZ6SZ0NRC+GVmzmPbwuHtBU66HLBHfukShjqIusp6YOqJBjb0R6OffhWHqTTFLqPpKut2qIGNprfWUdIYg3adz3NyXd+xwpL0R6XpLFetWvZEGyxXF1NGCN2xD0m48Dn+CC1gAFyvBlTC+d8LZWOlYAXsDt255ZHYvYIOUREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERBq7/AGOh1HZqi13GISU07SHd7T2OB7CF8S323NtN+r7cyYTspp3RCUYw4A4zsvsrWtNqGv09NRablp4Kyf0HTzvLerZ2kYB37PBfP8n9HzWRcXeUW1xPb17v/SgqRcjmFaj/AOj9rRvI253sqD8F0/wBa1Dmgx0OCQCRUcv4IN10PdJV4oOKwTW6tu9KxhfC2lbxyQju3I9H37K1q7XtzFI8UmiNRSzEYaHMZGPbxcR/ks/QWhLdoeyikpmiSrkw6pqSN5Hf3AdgUtwAEFBUd81LQWyojvek7q19TdYao1WGuLiHtDWEbb4AGe0rZ2LUWr7Vq28V82ibtNQXGRrsYYJGFuwOwwdvf4rr076j1FaDaoLcHQ0L3CV07Gh2ZWuBa05G3YfFWdoyvuVz0fbK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PvXOidSV+p7bDXVDYGsfA172xxPYWPPYC4+kMdoQevnXWn0Wt34t+WnnXWv0Wt34t+WpWiCKedta/Ra3fi35aedda/Ra3fi35alaII3R3HVktXEyr07RQU7nenKy5cZaO8N6sZ+tSMLlEBERAREQEREBERAQ8kRBoINJ2ynr6usi8obJV1LaqoHXHhkkbs3I7vDkutz0daLwyYVsMj3y1DKgyh+Hte3HDwu5gDA2GykKIOgYCzhcOIYxvvn2rU27TlBaRHHRdfHTxPdJHT9aerYXc8Du3O3IdgW5RBoazSdqrX15khe1lw4fLI43lrZ+HlxAduNsjGRsVsJLbA+akkHHH5JkRMjOG4IxgjtGFnIg0lNpa1UlruFtpqcw0le+R80bHEbvGHY7s+CybbZ6W1WeG10oe2mii6pgLsuDcYAyd+S2SINBRaTtdBYqeywRyigglErY3SF24dxYJPMZ3wV2odLWy2ec/I45IW3N5fUNa/0eIjBLRybt3Leog0w03bRcrfcTC41tBE6CGYu9LgIwQ4/te9eJ0nbTdKy5ZqPKawsM7uuPpBvzW+DfAbLfogj910faL2yqZXwvl8pcxzncWHNLfm8J5tHsW6EDfJuoPEWcHBknfGMc17Ig01JpygpLmLkBLLWtp/JmTSvLnNjznhHv7efivO2aWt9oe51IahofUuqnMMxLXSO5uI7fZyW9RBr73Z6S/wBoqLXXsc+lqG8MjWuLSRzxkLDZpe3R3S33FrZfKbfAaenJkOGsIwQR28uZW8RBHKzRlnrpGSTwyGZlUKtszX4eJP6w3xty5LMqdP0VTdDcwJYK10PUPmheWl8fPB7D4HmOxbdEGnuOnaC5m3eUiUm3yCWnLXkcLwMAnv271nUVGyig6qN8jwXF5dI8ucSTk7rKRBp6rTdtrqx1VWQuneZI5Q2R2WtezPCQOw7rwo9J2yht1bQU7ZmwVsrpp/0hJc527jnsyt+iDRU2lbTSXKsr6aB0M1ZCIZhG7ha5o5HhGwPjzXrQ6ct9vubrixsklY6BtN10ry5wjachv19vNbhEGtu1joL1HC2tic51PKJYZGOLXRvHIgjksWk0vbqKnuUMTZf+0nl9U8yHieSME+G3cFvEQRy0aMs9iqo6m3RSwyspxTnEpIcwcuIftEdhO65OjbOa2hrOpe2qopHSxSteQ4udueIj5w8CpEiDT12nbfc6avpq6N08FcAJonuy3YYBH7p9i6V2mbfcae3Q1DZeG3vZJT8LyOFzRgE9/vW7RBqIdPW6no62miie0VznOqZOMl8hcMElx35beCWiwUlkggp6MziGCLqYo3ylzWtznl3+PNbdEBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQf//Z</Image>
+              <Name>Image1</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Stretch>True</Stretch>
+            </Image1>
+            <Text2 Ref="8" type="Text" isKey="true">
+              <Border>Left, Right;[137:0:0];1;None;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>84,14,26,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Pedido:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text2>
+            <Text3 Ref="9" type="Text" isKey="true">
+              <Border>Left, Right;[137:0:0];1;None;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>84,20,26,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Guid>b18b0fc2b5a846e7b77fa495ffd82536</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>No. Orden:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text3>
+            <Text5 Ref="10" type="Text" isKey="true">
+              <Border>Left, Right;[137:0:0];1;None;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>112,14,40,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Guid>52f60232696b4b9fb6a1090256e529a8</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{encabezado.PEDCLI}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text5>
+            <Text6 Ref="11" type="Text" isKey="true">
+              <Border>Left, Right;[137:0:0];1;None;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>112,20,40,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Guid>7cf2da3fc59d4ef9b3c2a97bb27ef439</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{encabezado.no_ped}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text6>
+            <Text10 Ref="12" type="Text" isKey="true">
+              <Border>Left, Right;[137:0:0];1;None;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>84,26,38,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Guid>aae0de9b395b4a77be62c5e51739b224</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Fecha de pedido:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text10>
+            <Text11 Ref="13" type="Text" isKey="true">
+              <Border>Left, Right;[137:0:0];1;None;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>124,26,56,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Guid>9ca0328034a142008be969bb554cac22</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{Format("{0:MM/dd/yyyy}", partidas.UsuFecha)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text11>
+            <Text1 Ref="14" type="Text" isKey="true">
+              <Border>Left, Right;[137:0:0];1;None;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>8,50,52,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Guid>24c90a54fcbb49bc849b2767df985e8d</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Información del cliente</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <Text4 Ref="15" type="Text" isKey="true">
+              <Border>Left, Right;[137:0:0];1;None;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>8,56,26,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Guid>121503733b3c4ff48eba7e45113f99bd</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Sucursal:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text4>
+            <Text7 Ref="16" type="Text" isKey="true">
+              <Border>Left, Right;[137:0:0];1;None;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>34,56,90,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Guid>e31af6db1e1c4cc9941cc05c21f92be6</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{cliente.NOMBRE}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text7>
+            <Text8 Ref="17" type="Text" isKey="true">
+              <Border>Left, Right;[137:0:0];1;None;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>8,62,26,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Guid>7b86b89c70a24812953de68af74784ee</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Telefono:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text8>
+            <Text13 Ref="18" type="Text" isKey="true">
+              <Border>Left, Right;[137:0:0];1;None;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>34,62,52,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Guid>1d784a84854441eea44ad85be88c7886</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{cliente.TELEFONO}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text13>
+            <Text14 Ref="19" type="Text" isKey="true">
+              <Border>Left, Right;[137:0:0];1;None;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>8,72,52,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Guid>0fbc237f35e14681a2c2544dce3b0cdd</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Dirección:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text14>
+            <Text16 Ref="20" type="Text" isKey="true">
+              <Border>Left, Right;[137:0:0];1;None;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <CanGrow>True</CanGrow>
+              <CanShrink>True</CanShrink>
+              <ClientRectangle>8,78,172,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12</Font>
+              <Guid>b5072d49fe4c493091595f8f00b3cd43</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{cliente.CALLE +","+ cliente.NUMERO +","+cliente.COLONIA+","+cliente.POBLA+","+cliente.CIUDAD+","+cliente.ESTADO+","+cliente.PAIS }</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text16>
+            <Text45 Ref="21" type="Text" isKey="true">
+              <Border>Left, Right;[137:0:0];1;None;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>10,106,52,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Guid>2d7855ebebfa495ab9fe046ab29d0fa7</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text45</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Detalles del pedido:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text45>
+            <Text19 Ref="22" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>10,114,62,8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Guid>7515ff92bec14111a6e79698fd206515</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Modelo</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text19>
+            <Text22 Ref="23" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>72,114,42,8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Guid>489621488fae442fac463e25038e32e3</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Código</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text22>
+            <Text24 Ref="24" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>114,114,22,8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Guid>68197792624a4e8f8e000672c33469fb</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Cantidad</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+            <Text25 Ref="25" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>136,114,22,8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Guid>9724875aecb04f5d971f2b0ed8af7410</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Precio</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text25>
+            <Text26 Ref="26" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>158,114,26,8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Guid>f3dc9a1a3110415396707dfc16d8fc74</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>Total</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text26>
+            <HorizontalLinePrimitive2 Ref="27" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>6,40,180,0.254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="28" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>996b4500e46f48c29a11612b7922510b</Guid>
+              <Name>HorizontalLinePrimitive2</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <StartCap Ref="29" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive2>
+            <HorizontalLinePrimitive3 Ref="30" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>6,102,180,0.254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="31" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>433aa495dac749679e3e7951c40d7ecc</Guid>
+              <Name>HorizontalLinePrimitive3</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <StartCap Ref="32" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </PageHeaderBand1>
+        <PageFooterBand1 Ref="33" type="PageFooterBand" isKey="true">
+          <Brush>White</Brush>
+          <ClientRectangle>0,223,190,54</ClientRectangle>
+          <Components isList="true" count="12">
+            <Text46 Ref="34" type="Text" isKey="true">
+              <Border>None;White;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>10,15,42,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11,Bold</Font>
+              <Guid>6197168e50b24598adbd7fd236e412cb</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text46</Name>
+              <Page isRef="5" />
+              <Parent isRef="33" />
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text46>
+            <Text48 Ref="35" type="Text" isKey="true">
+              <Border>None;White;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>52,15,48,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11,Bold</Font>
+              <Guid>f5c1b53952e24159a771f59af39b3671</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text48</Name>
+              <Page isRef="5" />
+              <Parent isRef="33" />
+              <Text>Total de piezas:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text48>
+            <Text49 Ref="36" type="Text" isKey="true">
+              <Border>None;White;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>100,15,30,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11,Bold</Font>
+              <Guid>8435254e4acb416ca5f190a110991ca3</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text49</Name>
+              <Page isRef="5" />
+              <Parent isRef="33" />
+              <Text>{Format("{0:N2}", colSum(DataBand1,partidas.CANTIDAD))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text49>
+            <Text50 Ref="37" type="Text" isKey="true">
+              <Border>None;White;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>130,15,24,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11,Bold</Font>
+              <Guid>6de759e6a1da49e3bc23a5ff1990de17</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text50</Name>
+              <Page isRef="5" />
+              <Parent isRef="33" />
+              <Text>Total:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text50>
+            <Text51 Ref="38" type="Text" isKey="true">
+              <Border>None;White;1;Solid;False;4;Black</Border>
+              <Brush>[191:191:191]</Brush>
+              <ClientRectangle>154,15,30,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11,Bold</Font>
+              <Guid>d14f29815003424fb1c5d9d5046d407e</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text51</Name>
+              <Page isRef="5" />
+              <Parent isRef="33" />
+              <Text>{Format("{0:C2}", Sum(partidas.CANTIDAD*partidas.PRECIO))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text51>
+            <Text30 Ref="39" type="Text" isKey="true">
+              <Border>Left, Right;[137:0:0];1;None;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>10,21,64,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11,Bold</Font>
+              <Guid>402f9af43df349a290dce8038353e061</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text30</Name>
+              <Page isRef="5" />
+              <Parent isRef="33" />
+              <Text>Observaciones del pedido:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text30>
+            <Text33 Ref="40" type="Text" isKey="true">
+              <Border>None;White;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>130,5,24,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11</Font>
+              <Guid>e02a2fa0bf09442fbb22d52b9aeeaa20</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text33</Name>
+              <Page isRef="5" />
+              <Parent isRef="33" />
+              <Text>IVA:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text33>
+            <Text34 Ref="41" type="Text" isKey="true">
+              <Border>None;White;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>154,5,30,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11</Font>
+              <Guid>d34083e79afb460faf5cb766da66eb57</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="5" />
+              <Parent isRef="33" />
+              <Text>{Format("{0:C2}", partidas.MiImpuesto)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text34>
+            <Text47 Ref="42" type="Text" isKey="true">
+              <Border>None;White;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>130,1,24,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11</Font>
+              <Guid>af79449bbc3e4726838236c667807e35</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text47</Name>
+              <Page isRef="5" />
+              <Parent isRef="33" />
+              <Text>Subtotal:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text47>
+            <Text52 Ref="43" type="Text" isKey="true">
+              <Border>None;White;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>154,1,30,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11</Font>
+              <Guid>701ab905f6af44d787e61d2883547f47</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text52</Name>
+              <Page isRef="5" />
+              <Parent isRef="33" />
+              <Text>{Format("{0:C2}", Sum(partidas.CANTIDAD*partidas.PRECIO))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text52>
+            <Text58 Ref="44" type="Text" isKey="true">
+              <Border>Left, Right;[137:0:0];1;None;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>10,27,174,14</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11</Font>
+              <Guid>492b8f9264a9443d8ca983cdb7d79ff5</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text58</Name>
+              <Page isRef="5" />
+              <Parent isRef="33" />
+              <Text>{encabezado.OBSERV}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text58>
+            <Text29 Ref="45" type="Text" isKey="true">
+              <Border>Left, Right;[137:0:0];1;None;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>0,45,188,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>47575e8460c741118df949757cae8809</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text29</Name>
+              <Page isRef="5" />
+              <Parent isRef="33" />
+              <Text>Este documento es de caracter informativo, no valido en terminos fiscales. Los precios y existencias estan sujetos a disponibilidad.</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text29>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageFooterBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </PageFooterBand1>
+        <DataBand1 Ref="46" type="DataBand" isKey="true">
+          <Brush>White</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,134,190,6</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text27 Ref="47" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>10,0,62,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>837974cf589a4423b7afd3c6903ec905</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="5" />
+              <Parent isRef="46" />
+              <Text>{partidas.OBSERV}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text27>
+            <Text28 Ref="48" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>72,0,42,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>8486f464720047ecab52499bcffdc913</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text28</Name>
+              <Page isRef="5" />
+              <Parent isRef="46" />
+              <Text>{partidas.ARTICULO}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text28>
+            <Text36 Ref="49" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>114,0,22,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>6126836f002147e6990faa26ae1398bf</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text36</Name>
+              <Page isRef="5" />
+              <Parent isRef="46" />
+              <Text>{Format("{0:N2}", partidas.CANTIDAD)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text36>
+            <Text37 Ref="50" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>136,0,22,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>97c12716cc68460eb099d5d0225462b0</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text37</Name>
+              <Page isRef="5" />
+              <Parent isRef="46" />
+              <Text>{Format("{0:C2}", partidas.PRECIO)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text37>
+            <Text38 Ref="51" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>158,0,26,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>455bf5d75e0e4473b9834bc085f83d06</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text38</Name>
+              <Page isRef="5" />
+              <Parent isRef="46" />
+              <Text>{Format("{0:C2}", partidas.CANTIDAD*partidas.PRECIO)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text38>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>partidas</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Guid>33b7a4acd0234c8f87dddb296ee969ff</Guid>
+          <Name>DataBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>558465f6a54e4c9cbcd6523984a5725f</Guid>
+      <Margins>10,10,10,10</Margins>
+      <Name>Page1</Name>
+      <PageHeight>297</PageHeight>
+      <PageWidth>210</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="52" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="53" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportCacheMode>On</ReportCacheMode>
+  <ReportChanged>3/12/2018 2:01:46 PM</ReportChanged>
+  <ReportCreated>6/16/2011 12:31:24 AM</ReportCreated>
+  <ReportFile>C:\Users\Desarrollo MAC\Documents\Visual Studio 2017\Projects\CucuruchoWeb\HuvicaTest1\mrt\Pedidos.mrt</ReportFile>
+  <ReportGuid>e74085f7222847b3bf5666b7f48a33c3</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Millimeters</ReportUnit>
+  <ReportVersion>2015.1.0</ReportVersion>
+  <Script>Imports System
+Imports System.Drawing
+Imports System.Windows.Forms
+Imports System.Data
+Imports Stimulsoft.Controls
+Imports Stimulsoft.Base.Drawing
+Imports Stimulsoft.Report
+Imports Stimulsoft.Report.Dialogs
+Imports Stimulsoft.Report.Components
+
+Namespace Reports
+    Public Class Report
+        Inherits Stimulsoft.Report.StiReport
+
+        Public Sub New()
+            MyBase.New
+            Me.InitializeComponent
+        End Sub
+
+        #Region "StiReport Designer generated code - do not modify"
+		#End Region 'StiReport Designer generated code - do not modify
+    End Class
+End Namespace
+</Script>
+  <ScriptLanguage>VB</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

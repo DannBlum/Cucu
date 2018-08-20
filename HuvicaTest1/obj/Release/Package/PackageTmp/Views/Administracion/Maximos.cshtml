@@ -1,0 +1,35 @@
+﻿@model CucuruchoCafe.Models.AdministracionModels
+@using CucuruchoCafe.Models
+@using System.Data;
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Maximos";
+}
+
+
+@if (Request.IsAuthenticated)
+{
+
+
+    <div class=" container-scroller">
+        <!-- partial:partials/_navbar.html -->
+        @Html.Partial("_navbar")
+        <div class="container-fluid">
+            <div class="row row-offcanvas row-offcanvas-right">
+                @Html.Partial("_sidebar")
+            </div>
+            @{@Html.Partial("_Maximos");}
+
+          
+
+
+        </div>
+
+    </div>
+
+    }
+    else
+    {
+        @Html.Action("Login", "Account")
+    }
+

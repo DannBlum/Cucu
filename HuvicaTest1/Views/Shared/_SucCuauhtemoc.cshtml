@@ -1,0 +1,232 @@
+﻿@model CucuruchoCafe.Models.SucursalesModels
+@using CucuruchoCafe.Models
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+    function Navegacion(valor) {
+        //alert(valor + " " + parseInt($("#contador").val()));
+        if (valor == "back") {
+            var cont = parseInt($("#contador").val());
+            document.getElementById("contador").value = (parseInt(cont) - 10) < 0 ? 0 : (parseInt(cont) - 10);
+        }
+        if (valor == "next") {
+            var cont = parseInt($("#contador").val());
+            document.getElementById("contador").value = (parseInt(cont) + 10);
+        }
+        //alert(valor + " " + parseInt($("#contador").val()));
+    }
+    function onchangeevent(i) {
+        document.getElementById("Inv" + i).value = parseInt($("#Inv" + i).val()) < 0 ? 0 : parseInt($("#Inv" + i).val());
+        document.getElementById("C4" + i).value = (parseInt($("#Max" + i).val()) - parseInt($("#Inv" + i).val())) < 0 ? 0 : (parseInt($("#Max" + i).val()) - parseInt($("#Inv" + i).val()));
+    };
+    function onchangeevent2(i) {
+        document.getElementById("C4" + i).value = parseInt($("#C4" + i).val()) < 0 ? 0 : parseInt($("#C4" + i).val());
+
+    };
+    function resetCount() {
+        document.getElementById("contador").value = "0";
+   //     alert(document.getElementById("sku").val());
+        document.getElementById("sku").value = "";
+   //     alert(document.getElementById("sku").val());
+    }
+
+    function validarCarrito() {
+       // alert(document.getElementById("carrito").textContent.trim());
+        var val = parseInt(document.getElementById("carrito").textContent.trim().substring(document.getElementById("carrito").textContent.trim().indexOf("(")+1, document.getElementById("carrito").textContent.trim().indexOf("Ar")).trim());
+        if (val <= 0) {
+            alert("El carrito esta vacio");
+            return false;
+        }
+        
+        var r = confirm("¿Ir al carrito con "+val+" articulos ?");
+        if (r == false) {
+            return false;
+        }
+
+    }
+
+
+    function SubmitForm(tam) {
+
+        var count = 0;
+        var i = 0;
+
+
+        for (i = 0; i < tam; i++) {
+            var val = document.getElementById("C4" + i).value
+            if (val.length < 1 || val <= 0) {
+                count++;
+            }
+        }
+
+        //if (count >= tam) {
+            //alert("Favor de verificar información")
+            //return false;
+        //}
+
+        
+            var r = confirm("¿Continuar con la operación?");
+            if (r == false) {
+                return false;
+            }
+        
+      
+     
+        
+    }
+
+
+</script>
+@using (Html.BeginForm("GuardaSucursal", "Sucursales", FormMethod.Post))
+{
+
+    <!-- partial -->
+    <div class="content-wrapper">
+        <div class="row mb-2">
+            <div class="col">
+                <h3 class="page-heading mb-4">Lista de surtido de sucursal : @Model.sucursal.ToUpper()</h3>
+            </div>
+            <div class="col">
+                <button class="btn btn-outline-primary mr-2" type="submit" name="carrito" id="carrito" onclick="return validarCarrito();">
+                    <span class="fa fa-shopping-cart"> </span> Carrito de @Model.sucursal.ToUpper() (@Model.tamCarrito Articulos)
+                </button>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        @*<h5 class="card-title mb-4">Sucursal : Cuauhtemoc</h5><br />*@
+
+                        <div class="form-group">
+                            <label for="Buscador"><h5>Articulo a buscar</h5></label>
+                            <div class="col-lg-12">
+                                <div class="input-group">
+                                    @Html.TextBoxFor(m => m.sku, new { type = "text", @class = "form-control p-input", id = "sku", placeholder = "Ingrese articulo a buscar", onclick = "return resetCount();" })
+                                    <span class="input-group-btn">
+                                        <button type="submit" name="buscar" class="btn btn-primary btn-lg mr-2">Buscar</button>
+                                    </span>
+                                </div><!-- /input-group -->
+                            </div><!-- /.col-lg-6 -->
+                        </div>
+
+
+
+
+                        <div class="table-responsive">
+                            <div class="form-group">
+                                <table class="table center-aligned-table">
+                                    <thead>
+                                        <tr class="text-primary">
+                                            <th>#</th>
+                                            @*<th>Linea</th>*@
+                                            <th>Articulo</th>
+                                            <th>Descripcion</th>
+                                            <th>Cantidad a Pedir</th>
+                                            <th>Maximo Sugerido</th>
+                                            <th>Restante Maximo Sugerido</th>
+                                            <th>Estado \(•‿•)/</th>
+                                            @*<th></th>*@
+                                        </tr>
+                                    </thead>
+
+
+                                    @{
+
+                                        for (int i = 0; i < Model.SucPolanco.Count; i++)
+                                        {
+
+                                            <tr class="table-success">
+
+                                                <td>@Html.HiddenFor(m => m.SucPolanco[i].fila)@Model.SucPolanco[i].fila</td>
+                                                <td data-toggle="tooltip" data-placement="top" title="@Model.SucPolanco[i].descrip">@Html.HiddenFor(m => m.SucPolanco[i].sku)@Model.SucPolanco[i].sku</td>
+                                                <td>@Html.HiddenFor(m => m.SucPolanco[i].descrip)@Model.SucPolanco[i].descrip</td>
+                                                <td>@Html.TextBoxFor(m => m.SucPolanco[i].Inv, new { type = "number", @class = "form-control input-sm", id = "Inv" + i, placeholder = "Ingrese Inventario", onchange = "return onchangeevent(" + i + ");", TabIndex = (i + 1) })</td>@*<td>@c.Inv</td>*@
+                                                <td>@Html.TextBoxFor(m => m.SucPolanco[i].Max, new { type = "number", @class = "form-control input-sm", id = "Max" + i, placeholder = "Maximo", @readonly = "readonly" })</td>@*<td>@c.Max</td>*@
+                                                <td>@Html.TextBoxFor(m => m.SucPolanco[i].C4, new { type = "number", @class = "form-control input-sm", id = "C4" + i, placeholder = "Cantidad a pedir", TabIndex = (10 + i + 1), onchange = "return onchangeevent2(" + i + ");" })</td>
+                                                <td>@Html.TextBoxFor(m => m.SucPolanco[i].Happy, new { type = "number", @class = "form-control input-sm", id = "Happy" + i, placeholder = "Surtidos", @readonly = "readonly", })</td>
+                                                @*<td><button type="button" class="btn btn-success mr-2">Success</button></td>*@
+                                                @*<td><a href="#" class="btn btn-danger btn-sm">Remove</a></td>*@
+                                            </tr>
+                                        }
+                                    }
+
+                                    <tr class="table-primary">
+                                        <td>@Model.totalTickets</td>
+                                        @*<td></td>*@
+                                        <td></td>
+                                        <td></td>
+                                        <td>@*@Model.TotInv*@</td>
+                                        <td>@*@Model.TotMax*@</td>
+                                        <td></td>
+                                        <td></td>
+                                        @*<td></td>*@
+
+                                        @*<td><a href="#" class="btn btn-danger btn-sm">Remove</a></td>*@
+                                    </tr>
+
+
+
+                                </table>
+                            </div>
+                        </div>
+                        <center>
+
+                            <br />
+@if (Model.enCarrito)
+{
+                            <div class="form-group">
+                                <label for="Textarea"><h5>Observaciones</h5></label>
+                                @Html.TextAreaFor(m => m.comentariosPedido, new { type = "text", @class = "form-control p-input", id = "Textarea", rows = "5", placeholder = "Escribe aqui tus comentarios del pedido", TabIndex = (20 + 1) })
+                            </div>
+}
+@if (Model.SucPolanco.Count >0)
+{
+                            <div class="form-group">
+
+                                @if (Model.enCarrito)
+                                {
+                                    <button type="submit" TabIndex="22" , class="btn btn-primary btn-lg mr-2" name="Guardar" value="Save" onclick="return SubmitForm(@Model.SucPolanco.Count);">Guardar Pedido</button>
+                                }
+                                else
+                                {
+                                    <button type="submit" TabIndex="22" , class="btn btn-primary btn-lg mr-2" name="Guardar" value="Add" onclick="return SubmitForm(@Model.SucPolanco.Count);">Añadir a Carrito</button>
+                                }
+
+                            </div>
+}
+                            @if (!Model.enCarrito)
+                            {
+                                <table>
+                                    <tr>
+                                        <td><button style="font-size:25px" name="navegar" value="back" class="btn btn-outline-primary mr-2" onclick="Navegacion(this.value);"><i class="fa fa-arrow-circle-left"></i></button></td>
+                                        <td>
+                                            <div>
+
+                                                @Html.HiddenFor(m => m.contador, new { name = "contador", value = Model.contador })
+                                            </div>
+                                        </td>
+                                        @if (Model.SucPolanco.Count >= 10)
+                                        {
+                                            <td><button style="font-size:25px" name="navegar" value="next" class="btn btn-outline-primary mr-2" onclick="Navegacion(this.value);"><i class="fa fa-arrow-circle-right"></i></button></td>
+                                        }
+
+                                    </tr>
+
+                                </table>
+
+                            }
+                        </center>
+                        @Html.HiddenFor(m => m.sucursal, new { Value = Model.sucursal })
+                        @Html.HiddenFor(m => m.usuario, new { Value = Model.usuario })
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                                        }

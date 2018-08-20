@@ -1,0 +1,239 @@
+﻿<nav class="bg-white sidebar sidebar-offcanvas" id="sidebar">
+    <div class="user-info">
+        <img src="~/images/faces/face8.jpg" alt="">
+        <p class="name"> @User.Identity.Name.ToUpper()@*Lic. L. Giovanna García R.*@</p>
+        @*<p class="designation">Dirección de Operaciones</p>*@
+        <span class="online"></span>
+    </div>
+    <ul class="nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="@Url.Action("Concentradora", "Sucursales")">
+                @*@Html.ActionLink("Hola", "Index", "Home", new { @class = "nav-link" })*@
+                <img src="~/images/icons/1.png" alt="">
+                <span class="menu-title">Lista concentrada</span>
+            </a>
+        </li>
+
+        <li class="nav-item active">
+            <a class="nav-link" href="@Url.Action("Maximos", "Administracion")">
+                @*@Html.ActionLink("Hola", "Index", "Home", new { @class = "nav-link" })*@
+                <img src="~/images/icons/007-fire.png" alt="">
+                <span class="menu-title">Alta Maximos</span>
+            </a>
+        </li>
+
+
+
+        @if (User.Identity.Name.ToUpper().Contains("Cuauhtemoc".ToUpper()) || !User.Identity.Name.ToUpper().Contains("@"))
+                    {
+            <li class="nav-item">
+                <a class="nav-link"  data-toggle="collapse" href="#cuauhtemoc"  aria-expanded="false" aria-controls="cuauhtemoc">
+                    <img src="~/images/icons/004-sheet.png" alt="">
+                    <span class="menu-title">(C1) Cuauhtemoc<i class="fa fa-sort-down"></i></span>
+                </a>
+                <div class="collapse" id="cuauhtemoc">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("SucCuauhtemoc", "Sucursales",new { @sucursal = "CUAUHTEMOC", @contador="0",@usuario=""+User.Identity.Name.ToUpper()})">
+                                <img src="~/images/icons/007-star.png" alt="">
+                                Nuevo pedido
+                            </a>
+                        </li>
+                        <!--<li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("SucCuauhtemoc", "Sucursales",new { @sucursal = "CUAUHTEMOC", @contador="0",@usuario=""+User.Identity.Name.ToUpper()})">
+                                <img src="~/images/icons/002-edit-text.png" alt="">
+                                Modificar pedido
+                            </a>
+                        </li>-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("SucCuauhtemoc", "Sucursales",new { @sucursal = "CUAUHTEMOC", @contador="0",@usuario=""+User.Identity.Name.ToUpper()})">
+                                <img src="~/images/icons/002-test.png" alt="">
+                                Reporte de pedido
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </li>
+        }
+        @if (User.Identity.Name.ToUpper().Contains("Condesa".ToUpper()) || !User.Identity.Name.ToUpper().Contains("@"))
+        {
+            <li class="nav-item">
+                <a class="nav-link"  data-toggle="collapse" href="#condesa"  aria-expanded="false" aria-controls="condesa">
+                    <img src="~/images/icons/005-forms.png" alt="">
+                    <span class="menu-title">(C2) Condesa<i class="fa fa-sort-down"></i></span>
+                </a>
+                <div class="collapse" id="condesa">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item">
+                            <a class="nav-link"  href="@Url.Action("SucCuauhtemoc", "Sucursales",new { @sucursal = "CONDESA",@contador="0",@usuario=""+User.Identity.Name.ToUpper()})">
+                                <img src="~/images/icons/007-star.png" alt="">
+                                Nuevo pedido
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="@Url.Action("SucCuauhtemoc", "Sucursales",new { @sucursal = "CONDESA",@contador="0",@usuario=""+User.Identity.Name.ToUpper()})">
+                                <img src="~/images/icons/002-test.png" alt="">
+                                Reporte de pedido
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        }       
+        @if (User.Identity.Name.ToUpper().Contains("Roma".ToUpper()) || !User.Identity.Name.ToUpper().Contains("@"))
+        {
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#roma"  aria-expanded="false" aria-controls="roma">
+                    <img src="~/images/icons/004-sheet.png" alt="">
+                    <span class="menu-title">(C3) Roma<i class="fa fa-sort-down"></i></span>
+                </a>
+                <div class="collapse" id="roma">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("SucCuauhtemoc", "Sucursales",new { @sucursal = "ROMA",@contador="0",@usuario=""+User.Identity.Name.ToUpper()})">
+                                <img src="~/images/icons/007-star.png" alt="">
+                                Nuevo pedido
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("SucCuauhtemoc", "Sucursales",new { @sucursal = "ROMA",@contador="0",@usuario=""+User.Identity.Name.ToUpper()})">
+                                <img src="~/images/icons/002-test.png" alt="">
+                                Reporte de pedido
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        }
+        @if (User.Identity.Name.ToUpper().Contains("Polanco".ToUpper()) || !User.Identity.Name.ToUpper().Contains("@"))
+        {
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#polanco"  aria-expanded="false" aria-controls="polanco">
+                    <img src="~/images/icons/005-forms.png" alt="">
+                    <span class="menu-title">(C4) Polanco<i class="fa fa-sort-down"></i></span>
+                </a>
+                <div class="collapse" id="polanco">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("SucCuauhtemoc", "Sucursales",new { @sucursal = "POLANCO",@contador="0",@usuario=""+User.Identity.Name.ToUpper()})">
+                                <img src="~/images/icons/007-star.png" alt="">
+                                <span class="menu-title">Nuevo pedido</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("SucCuauhtemoc", "Sucursales",new { @sucursal = "POLANCO",@contador="0",@usuario=""+User.Identity.Name.ToUpper()})">
+                                <img src="~/images/icons/002-test.png" alt="">
+                                <span class="menu-title">Reporte de pedido</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        }
+        @if (User.Identity.Name.ToUpper().Contains("Fuego".ToUpper()) || !User.Identity.Name.ToUpper().Contains("@"))
+        {
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#fuego"  aria-expanded="false" aria-controls="fuego">
+                    <img src="~/images/icons/004-sheet.png" alt="">
+                    <span class="menu-title">(CF) Casa Fuego<i class="fa fa-sort-down"></i></span>
+                </a>
+                <div class="collapse" id="fuego">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("SucCuauhtemoc", "Sucursales",new { @sucursal = "CASADEFUEGO",@contador="0",@usuario=""+User.Identity.Name.ToUpper()})">
+                                <img src="~/images/icons/007-star.png" alt="">
+                                <span class="menu-title">Nuevo pedido</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("SucCuauhtemoc", "Sucursales",new { @sucursal = "CASADEFUEGO",@contador="0",@usuario=""+User.Identity.Name.ToUpper()})">
+                                <img src="~/images/icons/002-test.png" alt="">
+                                <span class="menu-title">Reporte de pedido</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        }
+
+
+
+        <li class="nav-item">
+            @if (Request.IsAuthenticated)
+        {
+            using (Html.BeginForm("LogOff", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "header-right", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                <a class="nav-link" href="@Url.Action("LogOff", "Account")">                     
+                        <img src="~/images/icons/10.png" alt="">
+                        <span class="menu-title">Cerrar Sesion</span>
+                    </a>
+                }
+            }
+        </li>
+
+
+
+
+        @*<li class="nav-item">
+                <a class="nav-link" href="pages/charts/index.html">
+                    <img src="images/icons/6.png" alt="">
+                    <span class="menu-title">Charts</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/icons/index.html">
+                    <img src="images/icons/7.png" alt="">
+                    <span class="menu-title">Icons</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/ui-elements/typography.html">
+                    <img src="images/icons/8.png" alt="">
+                    <span class="menu-title">Typography</span>
+                </a>
+            </li>*@
+        @*<li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#sample-pages" aria-expanded="false" aria-controls="sample-pages">
+                    <img src="images/icons/9.png" alt="">
+                    <span class="menu-title">Sample Pages<i class="fa fa-sort-down"></i></span>
+                </a>
+                <div class="collapse" id="sample-pages">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/samples/blank_page.html">
+                                Blank Page
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/samples/login.html">
+                                Login
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/samples/register.html">
+                                Register
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/samples/404.html">
+                                404
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/samples/500.html">
+                                500
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>*@
+        @*<li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="images/icons/10.png" alt="">
+                    <span class="menu-title">Settings</span>
+                </a>
+            </li>*@
+    </ul>
+</nav>

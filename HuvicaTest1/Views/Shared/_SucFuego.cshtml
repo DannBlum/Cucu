@@ -1,0 +1,87 @@
+﻿@model CucuruchoCafe.Models.SucursalesModels
+@using CucuruchoCafe.Models
+<!-- partial -->
+<div class="content-wrapper">
+    <h3 class="page-heading mb-4">Lista de Surtido</h3>
+    <div class="row mb-2">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title mb-4">Sucursal : Casa del Fuego</h5>
+                    <div class="table-responsive">
+                        <table class="table center-aligned-table">
+                            <thead>
+                                <tr class="text-primary">
+                                    <th>#</th>
+                                    @*<th>Linea</th>*@
+                                    <th>Articulo</th>
+                                    <th>Descripcion</th>
+                                    <th>Cantidad a Pedir</th>
+                                    <th>Maximo Sugerido</th>
+                                    <th>Restante Maximo Sugerido</th>
+                                    <th>Estado \(•‿•)/</th>
+                                    @*<th></th>*@
+                                </tr>
+                            </thead>
+
+
+                            @{
+                                foreach (SucPolanco c in Model.SucPolanco)
+                                {
+                                    <tr class="table-success">
+                                        <td>@c.fila</td>
+                                        @*<td>@c.linea</td>*@
+                                        <td data-toggle="tooltip" data-placement="top" title="@c.descrip!">@c.sku</td>
+                                        <td>@c.descrip</td>
+                                        <td><input type="text" class="form-control p-input" id="" aria-describedby="emailHelp" placeholder="Inv"  value="@c.Inv"></td>@*<td>@c.Inv</td>*@
+                                        <td><input type="text" class="form-control p-input" id="" aria-describedby="emailHelp" placeholder="Max" value="@c.Max"></td>@*<td>@c.Max</td>*@
+                                        <td><input type="text" class="form-control p-input" id="" aria-describedby="emailHelp" placeholder="Casa del Fuego (CF)"  value="@c.Inv"></td>
+                                        <td><input type="text" class="form-control p-input" id="" aria-describedby="emailHelp" placeholder="\(•‿•)/"></td>
+                                        @*<td><button type="button" class="btn btn-success mr-2">Success</button></td>*@
+                                        @*<td><a href="#" class="btn btn-danger btn-sm">Remove</a></td>*@
+                                    </tr>
+                                }
+                            }
+
+                            <tr class="table-warning">
+                                <td>@Model.totalTickets</td>
+                                <td></td>
+                                @*<td></td>*@
+                                <td></td>
+                                <td>@Model.TotInv</td>
+                                <td>@Model.TotMax</td>
+                                <td></td>
+                                <td></td>
+                                @*<td></td>*@
+
+                                @*<td><a href="#" class="btn btn-danger btn-sm">Remove</a></td>*@
+                            </tr>
+
+
+
+                        </table>
+                    </div>
+                    <center>
+                        <table>
+                            <tr>
+                                <td><a href="#" type="button" id="btnBack" class="btn btn-success mr-2"> << </a></td>
+                                <td>
+                                    <div>
+                                        <input type="hidden" id="contTabla" name="contTabla" value="1" />
+                                    </div>
+                                </td>
+                                <td><a href="#" type="button" id="btnNext" class="btn btn-success mr-2"> >> </a></td>
+
+                            </tr>
+                        </table>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <center>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg mr-2">Realizar Pedido</button>
+        </div>
+    </center>
+</div>

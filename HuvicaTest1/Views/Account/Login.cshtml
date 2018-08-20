@@ -1,0 +1,114 @@
+﻿@using CucuruchoWeb.Models
+@model LoginViewModel
+@{
+    //Layout = "~/Views/Shared/_Layout.cshtml";    
+    ViewBag.Title = "Iniciar sesión";
+}
+
+
+
+<div class="container-scroller">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="content-wrapper full-page-wrapper d-flex align-items-center auth-pages">
+                <div class="card col-lg-4 mx-auto">
+                    <div class="card-body px-5 py-5">
+                        <h1 class="card-title text-left mb-3">Iniciar Sesion</h1>
+                        <!-- BEGIN FORM inserta un <form ... > </form> dinamicamente  -->
+                        <!-- actionName, controllerName, ReturnUrl, formMethod, cssClass, role (accesibilidad)-->
+                        <!-- ViewBag permite pasar información temporalmente del controlador a las vistas -->
+                        @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {
+                            <div class="sign-in-form-top">
+                                <!-- Token que evita los ataques CSRF-->
+                                @Html.AntiForgeryToken()
+                              
+                            </div>
+
+                            <!-- Genera una lista desordenada de elementos de mensajes de validación que están en el objeto ModelStateDictionary-->
+                            <!-- Puede mostrar todos los errores juntos si su primer arg es falso, o uno para cada campo si es true-->
+                            <!-- ValidationSummary( errorPorCampo, mensaje, atributosHtml(Estilo del Mensaje) )-->
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Email, new { @class = "" })
+                                @*<input type="text" class="form-control p_input" placeholder="Username">*@
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control p_input", Value = "Cuenta@Usuario", onfocus = "this.value = ''", onblur = "if (this.value == '') {this.value = 'Cuenta@Usuario';}" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Password, new { @class = "" })
+                                @*<input type="text" class="form-control p_input" placeholder="Password">*@
+                                @Html.PasswordFor(m => m.Password, new { @class = "form-control p_input", Value = "Password", onfocus = "this.value = ''", onblur = "if (this.value == '') {this.value = 'Password';}" })                                
+                            </div>
+                            <div class="form-group d-flex align-items-center justify-content-between">                                          
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-block enter-btn">LOG IN</button>
+                            </div>                          
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+
+
+
+@*<div class="row">
+        <div class="col-md-8">
+            <section id="loginForm">
+                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <h4>Use una cuenta local para iniciar sesión.</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <div class="checkbox">
+                                @Html.CheckBoxFor(m => m.RememberMe)
+                                @Html.LabelFor(m => m.RememberMe)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Iniciar sesión" class="btn btn-default" />
+                        </div>
+                    </div>
+                    <p>
+                        @Html.ActionLink("Registrar como nuevo usuario", "Register")
+                    </p>
+                    @* Habilite esta opción después de habilitar la confirmación de la cuenta para la función de restablecimiento de contraseña
+                        <p>
+                            @Html.ActionLink("¿Ha olvidado su contraseña?", "ForgotPassword")
+                        </p>
+                }
+            </section>
+        </div>
+        <div class="col-md-4">
+            <section id="socialLoginForm">
+                @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+            </section>
+        </div>
+    </div>*@
+

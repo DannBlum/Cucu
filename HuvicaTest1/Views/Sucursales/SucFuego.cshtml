@@ -1,0 +1,34 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "SucRoma";
+}
+
+
+
+
+@if (Request.IsAuthenticated)
+{
+    <div class=" container-scroller">
+        <!-- partial:partials/_navbar.html -->
+        @Html.Partial("_navbar")
+        <div class="container-fluid">
+            <div class="row row-offcanvas row-offcanvas-right">
+                @Html.Partial("_sidebar")
+                @Html.Partial("_SucFuego")
+                @*<div class="content-wrapper">
+                        @Html.Action("Login", "Account")
+                    </div>*@
+            </div>
+        </div>
+
+    </div>
+
+}
+else
+{
+    @Html.Action("Login", "Account")
+}
+
+
+

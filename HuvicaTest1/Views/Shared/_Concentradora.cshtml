@@ -1,0 +1,76 @@
+﻿@model CucuruchoCafe.Models.SucursalesModels
+@using CucuruchoCafe.Models
+
+
+
+
+<!-- partial -->
+<div class="content-wrapper">
+    <h3 class="page-heading mb-4">Lista concentrada</h3>
+    <div class="row mb-2">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title mb-4">LISTA DE PEDIDO DISTRIBUIDORA CUCURUCHO</h5>
+                    <div class="table-responsive">
+                        <table class="table center-aligned-table">
+                            <thead>
+                                <tr class="text-primary">
+                                    <th>#</th>
+                                    @*<th>Linea</th>*@
+                                    <th>Articulo</th>
+                                    <th>Descrip</th>
+                                    <th>Cuauhtemoc (C1)</th>
+                                    <th>Condesa (C2)</th>
+                                    <th>Roma (C3)</th>
+                                    <th>Polanco (C4)</th>
+                                    <th>Casa del Fuego (CF)</th>
+                                    @*<th>Estado</th>*@
+                                    @*<th></th>*@
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    bool color = false;
+                                    foreach (Concentradora c in Model.articulosConcentrador)
+                                    {
+                                        <tr class="table-success">
+                                            <td>@c.fila</td>
+                                            @*<td>@c.linea</td>*@
+                                            <td>@c.sku</td>
+                                            <td>@c.descrip</td>
+                                            <td>@c.C1</td>
+                                            <td>@c.C2</td>
+                                            <td>@c.C3</td>
+                                            <td>@c.C4</td>
+                                            <td>@c.CF</td>
+                                            @*<td><label class="badge badge-warning">Approved</label></td>*@
+                                            @*<td><a href="#" class="btn btn-danger btn-sm">Remove</a></td>*@
+                                        </tr>
+                                    }
+                                }
+
+                                <tr class="text-primary">
+                                    <td>@Model.totalTickets</td>
+                                    @*<td></td>*@
+                                    <td></td>
+                                    <td></td>
+                                    <td>@Model.TotC1</td>
+                                    <td>@Model.TotC2</td>
+                                    <td>@Model.TotC3</td>
+                                    <td>@Model.TotC4</td>
+                                    <td>@Model.TotCF</td>
+                                    @*<td></td>*@
+                                    @*<td><a href="#" class="btn btn-danger btn-sm">Remove</a></td>*@
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

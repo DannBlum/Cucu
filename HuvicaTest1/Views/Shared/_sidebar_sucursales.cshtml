@@ -1,0 +1,23 @@
+﻿<nav class="bg-white sidebar sidebar-offcanvas" id="sidebar">
+    <div class="user-info">
+        <img src="~/images/faces/face8.jpg" alt="">
+        <p class="name"> @User.Identity.Name.ToUpper()@*Lic. L. Giovanna García R.*@</p>
+        @*<p class="designation">Dirección de Operaciones</p>*@
+        <span class="online"></span>
+    </div>
+
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("SucCuauhtemoc", "Sucursales",new { @sucursal = "CUAUHTEMOC", @contador="0",@usuario=""+User.Identity.Name.ToUpper()})">
+                    <img src="~/images/icons/007-star.png" alt="">
+                    Nuevo pedido
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("SucCuauhtemoc", "Sucursales",new { @sucursal = "CUAUHTEMOC", @contador="0",@usuario=""+User.Identity.Name.ToUpper()})">
+                    <img src="~/images/icons/002-test.png" alt="">
+                    Reporte de pedido
+                </a>
+            </li>
+        </ul>
+</nav>

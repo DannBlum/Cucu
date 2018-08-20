@@ -1,0 +1,67 @@
+﻿@model CucuruchoCafe.Models.SucursalesModels
+@using CucuruchoCafe.Models
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "GuardaSucursalSuccess";
+}
+
+@if (Request.IsAuthenticated)
+{
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        function SubmitForm1() {
+
+            history.go(-1); history.go(-1);
+
+        }
+        function SubmitForm2() {
+            history.go(-1)
+        }
+
+
+    </script>
+    <div class="container-scroller">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="content-wrapper full-page-wrapper d-flex align-items-center auth-pages">
+                    <div class="card col-lg-4 mx-auto">
+                        <div class="card-body px-5 py-5">
+                            @if (Model.estaTodobien)
+                            {
+                                <h1 class="card-title text-left mb-3">Pedido: @Model.nPedido guardado @Model.error</h1>
+                            }
+                            else
+                            {
+                                <h1 class="card-title text-left mb-3">Error al guardar pedido.</h1>
+                            }
+
+                            <center>
+                                <div class="form-group">
+                                    @if (Model.estaTodobien)
+                                    {
+                                        <button type="submit" class="btn btn-primary btn-lg mr-2" onclick="return SubmitForm1();">Aceptar</button>
+                                    }
+                                    else
+                                    {
+                                        <button type="submit" class="btn btn-primary btn-lg mr-2" onclick="return SubmitForm2();">Reintentar</button>
+                                    }
+
+
+
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+}
+else
+{
+    @Html.Action("Login", "Account")
+}

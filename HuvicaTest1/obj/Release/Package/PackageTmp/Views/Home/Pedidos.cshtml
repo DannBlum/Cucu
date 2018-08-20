@@ -1,0 +1,601 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Pedidos";
+}
+
+@if (Request.IsAuthenticated)
+{
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css" />
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js"></script>
+
+    <style type="text/css">
+        /**
+        * Override feedback icon position
+        * See http://formvalidation.io/examples/adjusting-feedback-icon-position/
+        */
+        #eventForm .form-control-feedback {
+            top: 0;
+            right: -15px;
+        }
+    </style>
+    <script>
+
+
+
+        $(document).ready(function () {
+            $('.spinner .btn:first-of-type').on('click', function () {
+                $('.spinner input').val(parseInt($('.spinner input').val(), 10) + 1);
+            });
+            $('.spinner .btn:last-of-type').on('click', function () {
+                if ($('.spinner input').val() > 1)
+                    $('.spinner input').val(parseInt($('.spinner input').val(), 10) - 1);
+                else
+                    $('.spinner input').value = 1
+
+            });
+
+            $('#datePicker1')
+                .datepicker({
+                    autoclose: true,
+                    format: 'mm/dd/yyyy'
+                })
+                .on('changeDate', function (e) {
+                    // Revalidate the date field
+                    $('#eventForm').formValidation('revalidateField', 'date');
+                });
+
+            $('#datePicker2')
+                .datepicker({
+                    autoclose: true,
+                    format: 'mm/dd/yyyy'
+                })
+                .on('changeDate', function (e) {
+                    // Revalidate the date field
+                    $('#eventForm').formValidation('revalidateField', 'date');
+                });
+
+            $('#eventForm').formValidation({
+                framework: 'bootstrap',
+                icon: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'The name is required'
+                            }
+                        }
+                    },
+                    date: {
+                        validators: {
+                            notEmpty: {
+                                message: 'The date is required'
+                            },
+                            date: {
+                                format: 'MM/DD/YYYY',
+                                message: 'The date is not a valid'
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+    <section>
+        <div id="page-wrapper" class="sign-in-wrapper">
+            <div class="graphs">
+                <div class="sign-up">
+                    <h1>PEDIDO NUEVO</h1>
+                </div>
+                <div class="container">
+                    <h2 class="head">Selección del cliente</h2>
+                    <div class="select-box">
+                        <div class="row">
+
+                            <div class="form-group col-lg-10">
+                                <label for="selectArticulo">Cliente</label>
+                                <select data-size="10" data-container="body" title="Seleccionar cliente" class="selectpicker show-tick" data-width="100%" data-live-search="true">
+                                    <option data-icon="glyphicon-star" data-tokens="Loana Zafra">Loana Zafra</option>
+                                    <option data-icon="glyphicon-user" data-tokens="Janis Zafra">Janis Zafra</option>
+                                    <option data-icon="glyphicon-fire" data-tokens="Fernando Morrill">Fernando Morrill</option>
+                                    <option data-icon="glyphicon-fire" data-tokens="Brenda Abigail">Brenda Abigail</option>
+                                    <option data-icon="glyphicon-star" data-tokens="Carlos Omar Lopez">Carlos Omar Lopez</option>
+                                    <option data-icon="glyphicon-user" data-tokens="Ana Paola Ramirez">Ana Paola Ramirez</option>
+                                    <option data-icon="glyphicon-fire" data-tokens="Roberto Carlos Pérez">Roberto Carlos Pérez</option>
+                                    <option data-icon="glyphicon-star" data-tokens="Felix">Felix</option>
+                                    <option data-icon="glyphicon-fire" data-tokens="Alejandro Pérez">Alejandro Pérez</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-2">
+                                <p>@Html.ActionLink("Buscar cliente", "Pedidos", "Home", new { @class = "account" })</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="item-price">*@
+                <div class="container">
+                    <h2 class="head">Información del cliente</h2>
+                </div>
+
+                <table class="table table-sm">
+                    <tbody>
+                        <tr>
+                            <th scope="row"><h3>Nombre:</h3></th>
+                            <td><h4>Alejandro Pérez Prieto</h4></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><h3>Clasificación:</h3></th>
+                            <td><h4>Oro</h4></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><h3>Dirección:</h3></th>
+                            <td colspan="2"><h4>Cerrada Ramon Lopez Velarde, Mz.4 Lt.29, Colonia Citlalli, Delegacion Iztapalapa, CP 09660.</h4></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><h3>Telefono:</h3></th>
+                            <td colspan="2"><h4>0445512366836</h4></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="clearfix"></div>
+
+
+                <div class="container">
+                    <h2 class="head">Seleccion de articulos</h2>
+                </div>
+                <form>
+                    <div class="container-fluid">
+                        <h3 class="list-group-item-heading">Vendedor</h3>
+                        <br />
+                        <div class="form-row">
+                            <div class="form-group col-lg-9">
+                                <label for="selectArticulo">Vendedor</label>
+                                <select disabled data-size="10" id="selectArticulo" title="Seleccionar Linea" class="selectpicker show-tick " data-width="100%" data-live-search="true">
+                                    <option data-content="<span class='label label-success'>Relish</span>" data-subtext="Heinz" data-tokens="Electronics & Appliances">Electronics & Appliances</option>
+                                    <option data-tokens="Cars">Cars</option>
+                                    <option data-tokens="Bikes">Bikes</option>
+                                    <option data-tokens="Pets">Pets</option>
+                                    <option data-tokens="Books, Sports & Hobbies">Books, Sports & Hobbies</option>
+                                    <option data-tokens="Fashion">Fashion</option>
+                                    <option data-tokens="Kids">Kids</option>
+                                    <option data-tokens="Services">Services</option>
+                                    <option data-tokens="Jobs">Jobs</option>
+                                    <option data-tokens="Real Estate">Real Estate</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-3">
+                                <label for="selectArticulo">Lista de precio</label>
+                                <input disabled type="text" class="form-control" id="inputCity" value="2">
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="container-fluid">
+                        <h3 class="list-group-item-heading">Añadir articulo</h3>
+                        <div class="form-row">
+                            <div class="form-group col-lg-9">
+                                <label for="selectArticulo">Linea</label>
+                                <select data-size="10" id="selectArticulo" title="Seleccionar Linea" class="selectpicker show-tick " data-width="100%" data-live-search="true">
+                                    <option data-content="<span class='label label-success'>Relish</span>" data-subtext="Heinz" data-tokens="Electronics & Appliances">Electronics & Appliances</option>
+                                    <option data-tokens="Cars">Cars</option>
+                                    <option data-tokens="Bikes">Bikes</option>
+                                    <option data-tokens="Pets">Pets</option>
+                                    <option data-tokens="Books, Sports & Hobbies">Books, Sports & Hobbies</option>
+                                    <option data-tokens="Fashion">Fashion</option>
+                                    <option data-tokens="Kids">Kids</option>
+                                    <option data-tokens="Services">Services</option>
+                                    <option data-tokens="Jobs">Jobs</option>
+                                    <option data-tokens="Real Estate">Real Estate</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-3">
+                                <label for="selectArticulo">Almacen</label>
+                                <select data-size="10" id="selectArticulo" title="Seleccionar Almacen" class="selectpicker show-tick " data-width="100%" data-live-search="true">
+                                    <option data-content="<span class='label label-success'>Relish</span>" data-subtext="Heinz" data-tokens="Electronics & Appliances">Electronics & Appliances</option>
+                                    <option data-tokens="Cars">Cars</option>
+                                    <option data-tokens="Bikes">Bikes</option>
+                                    <option data-tokens="Pets">Pets</option>
+                                    <option data-tokens="Books, Sports & Hobbies">Books, Sports & Hobbies</option>
+                                    <option data-tokens="Fashion">Fashion</option>
+                                    <option data-tokens="Kids">Kids</option>
+                                    <option data-tokens="Services">Services</option>
+                                    <option data-tokens="Jobs">Jobs</option>
+                                    <option data-tokens="Real Estate">Real Estate</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-lg-12">
+                                <label for="selectArticulo">Articulo</label>
+                                <select data-size="10" id="selectArticulo" title="Seleccionar Linea" class="selectpicker show-tick " data-width="100%" data-live-search="true">
+                                    <option data-content="<span class='label label-success'>Relish</span>" data-subtext="Heinz" data-tokens="Electronics & Appliances">Electronics & Appliances</option>
+                                    <option data-tokens="Cars">Cars</option>
+                                    <option data-tokens="Bikes">Bikes</option>
+                                    <option data-tokens="Pets">Pets</option>
+                                    <option data-tokens="Books, Sports & Hobbies">Books, Sports & Hobbies</option>
+                                    <option data-tokens="Fashion">Fashion</option>
+                                    <option data-tokens="Kids">Kids</option>
+                                    <option data-tokens="Services">Services</option>
+                                    <option data-tokens="Jobs">Jobs</option>
+                                    <option data-tokens="Real Estate">Real Estate</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-lg-4">
+                                <label for="selectArticulo">Lote</label>
+                                <select data-size="10" id="selectArticulo" title="Seleccionar Linea" class="selectpicker show-tick " data-width="100%" data-live-search="true">
+                                    <option data-content="<span class='label label-success'>Relish</span>" data-subtext="Heinz" data-tokens="Electronics & Appliances">Electronics & Appliances</option>
+                                    <option data-tokens="Cars">Cars</option>
+                                    <option data-tokens="Bikes">Bikes</option>
+                                    <option data-tokens="Pets">Pets</option>
+                                    <option data-tokens="Books, Sports & Hobbies">Books, Sports & Hobbies</option>
+                                    <option data-tokens="Fashion">Fashion</option>
+                                    <option data-tokens="Kids">Kids</option>
+                                    <option data-tokens="Services">Services</option>
+                                    <option data-tokens="Jobs">Jobs</option>
+                                    <option data-tokens="Real Estate">Real Estate</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label for="selectArticulo">Caducidad</label>
+                                <select data-size="10" id="selectArticulo" title="Seleccionar Linea" class="selectpicker show-tick " data-width="100%" data-live-search="true">
+                                    <option data-content="<span class='label label-success'>Relish</span>" data-subtext="Heinz" data-tokens="Electronics & Appliances">Electronics & Appliances</option>
+                                    <option data-tokens="Cars">Cars</option>
+                                    <option data-tokens="Bikes">Bikes</option>
+                                    <option data-tokens="Pets">Pets</option>
+                                    <option data-tokens="Books, Sports & Hobbies">Books, Sports & Hobbies</option>
+                                    <option data-tokens="Fashion">Fashion</option>
+                                    <option data-tokens="Kids">Kids</option>
+                                    <option data-tokens="Services">Services</option>
+                                    <option data-tokens="Jobs">Jobs</option>
+                                    <option data-tokens="Real Estate">Real Estate</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label for="selectArticulo">Cantidad</label>
+                                <div class="input-group spinner">
+                                    <input disabled type="text" class="form-control bfh-number" value="1" data-min="1">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+                                        <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-lg-12">
+                                <button type="button" style="color: #fff; background-color: #01a185;border-color: #0275d8; padding: .75rem 1.5rem;      border: 1px solid transparent;   display: block; width: 100%;">Añadir articulo</button>
+                            </div>
+
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="container">
+                            <h2 class="head">Articulos añadidos</h2>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><h3>Articulo</h3></th>
+                                        <th scope="col"><h3>Descripción</h3></th>
+                                        <th scope="col"><h3>Cantidad</h3></th>
+                                        <th scope="col"><h3>Precio</h3></th>
+                                        <th scope="col"><h3>Impuesto</h3></th>
+                                        <th scope="col"><h3>Importe</h3></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+
+                                    <tr>
+                                      
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <th scope="row"><h3>Importe:</h3></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                              
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <th scope="row"><h3>Impuesto:</h3></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <th scope="row"><h3>Total:</h3></th>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        @*<div class="container-fluid">
+
+                                <div class="form-row">
+                                    <div class="form-group col-lg-12">
+
+                                        <div class="table-responsive">
+                                            <table class="table table-sm">
+                                                <tr class="table-success">
+                                                    <th align="left" scope="col"><h3 class="table-success">Articulo</h3></th>
+                                                    <th align="right" scope="col"><h3 class="table-success">Descripcion</h3></th>
+                                                    <th align="right" scope="col"><h3 class="table-success">Cantidad</h3></th>
+                                                    <th align="right" scope="col"><h3 class="table-success">Precio</h3></th>
+                                                    <th align="right" scope="col"><h3 class="table-success">Impuesto</h3></th>
+                                                    <th align="right" scope="col"><h3 class="table-success">Importe</h3></th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td align="left"><h4>SKU1</h4></td>
+                                                    <td align="left"><h4>SKU1</h4></td>
+                                                    <td align="right"><h4>100</h4></td>
+                                                    <td align="right"><h4>$548.00</h4></td>
+                                                    <td align="right"><h4>$548.00</h4></td>
+                                                    <td align="right"><h4>$54800.00</h4></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left"><h4>SKU2</h4></td>
+                                                    <td align="left"><h4>SKU2</h4></td>
+                                                    <td align="right"><h4>100</h4></td>
+                                                    <td align="right"><h4>$548.00</h4></td>
+                                                    <td align="right"><h4>$548.00</h4></td>
+                                                    <td align="right"><h4>$54800.00</h4></td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table  table-sm">
+                                                <tr>
+                                                    <th><h4></h4></th>
+                                                    <th><h4></h4></th>
+                                                    <th><h4></h4></th>
+                                                    <th><h4></h4></th>
+                                                    <th align="right"><h3>Importe</h3></th>
+                                                    <td align="right"><h4>$548.00</h4></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th><h4></h4></th>
+                                                    <th><h4></h4></th>
+                                                    <th><h4></h4></th>
+                                                    <th><h4></h4></th>
+                                                    <th align="right"><h3>Impuesto</h3></th>
+                                                    <td align="right"><h4>$548.00</h4></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th><h3></h3></th>
+                                                    <th><h3></h3></th>
+                                                    <th><h4></h4></th>
+                                                    <th><h4></h4></th>
+                                                    <th><h3>TOTAL</h3></th>
+                                                    <td align="right"><h4>$548.00</h4></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>*@
+                        <div class="container">
+                            <h2 class="head">Datos de entrega</h2>
+                        </div>
+                        <div class="container-fluid">
+
+                            <div class="form-row">
+                                <div class="form-group col-lg-2">
+                                    <label for="selectArticulo">Fecha de documento</label>
+                                    <div class="form-group">
+                                        <div class="date">
+                                            <div class="input-group input-append date" id="datePicker1">
+                                                <input type="text" class="form-control" name="date" />
+                                                <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group col-lg-4">
+                                    <label for="selectArticulo">Fecha de entrega</label>
+                                    <div class="form-group">
+                                        <div class="date">
+                                            <div class="input-group input-append date" id="datePicker2">
+                                                <input type="text" class="form-control" name="date" />
+                                                <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label for="selectArticulo">Direccion de entrega</label>
+                                    <select data-size="10" id="selectArticulo" title="Seleccionar Linea" class="selectpicker show-tick " data-width="100%" data-live-search="true">
+                                        <option data-content="<span class='label label-success'>Relish</span>" data-subtext="Heinz" data-tokens="Electronics & Appliances">Electronics & Appliances</option>
+                                        <option data-tokens="Cars">Cars</option>
+                                        <option data-tokens="Bikes">Bikes</option>
+                                        <option data-tokens="Pets">Pets</option>
+                                        <option data-tokens="Books, Sports & Hobbies">Books, Sports & Hobbies</option>
+                                        <option data-tokens="Fashion">Fashion</option>
+                                        <option data-tokens="Kids">Kids</option>
+                                        <option data-tokens="Services">Services</option>
+                                        <option data-tokens="Jobs">Jobs</option>
+                                        <option data-tokens="Real Estate">Real Estate</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-lg-12">
+                                    <label for="selectArticulo">Observaciones</label>
+
+                                    <textarea class="form-control" placeholder="Escribe aqui tus observaciones del pedido"></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-lg-12">
+                                <button type="button" style="color: #fff; background-color: #01a185;border-color: #0275d8; padding: .75rem 1.5rem;      border: 1px solid transparent;   display: block; width: 100%;">Guardar Pedido</button>
+                            </div>
+
+                        </div>
+                </form>
+                <br /><br />
+                @*<div class="col-md-7 product-view">
+                        <div class="post-ad-form">
+
+                            <form>
+
+                                <label>Articulo<span>*</span></label>
+                                <select data-size="10" title="Seleccionar articulo" class="selectpicker show-tick" data-width="auto" data-live-search="true">
+                                    <option data-content="<span class='label label-success'>Relish</span>" data-subtext="Heinz" data-tokens="Electronics & Appliances">Electronics & Appliances</option>
+                                    <option data-tokens="Cars">Cars</option>
+                                    <option data-tokens="Bikes">Bikes</option>
+                                    <option data-tokens="Pets">Pets</option>
+                                    <option data-tokens="Books, Sports & Hobbies">Books, Sports & Hobbies</option>
+                                    <option data-tokens="Fashion">Fashion</option>
+                                    <option data-tokens="Kids">Kids</option>
+                                    <option data-tokens="Services">Services</option>
+                                    <option data-tokens="Jobs">Jobs</option>
+                                    <option data-tokens="Real Estate">Real Estate</option>
+                                </select>
+                                <div class="clearfix"></div>
+
+                                <label>Ad Title <span>*</span></label>
+                                <input type="text" class="phone" placeholder="">
+
+                                <label>Observ.</label>
+                                <textarea class="mess" placeholder="Escribe aqui tus observaciones del pedido"></textarea>
+                                <div class="clearfix"></div>
+
+
+
+                                <div class="clearfix"></div>
+                            </form>
+                        </div>
+                    </div>*@
+
+                @*<div class="col-md-5 product-details-grid ">
+                        <div class="item-price">
+
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tr>
+                                        <th><h3>Articulo</h3></th>
+                                        <th><h3>Cantidad</h3></th>
+                                        <th><h3>Precio</h3></th>
+                                        <th><h3>Importe</h3></th>
+                                    </tr>
+
+                                    <tr>
+                                        <td align="left"><h4>SKU1</h4></td>
+                                        <td align="right"><h4>100</h4></td>
+                                        <td align="right"><h4>$548.00</h4></td>
+                                        <td align="right"><h4>$54800.00</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><h4>SKU2</h4></td>
+                                        <td align="right"><h4>100</h4></td>
+                                        <td align="right"><h4>$548.00</h4></td>
+                                        <td align="right"><h4>$54800.00</h4></td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tr class="condition">
+                                        <th><h3 class="rate"></h3></th>
+                                        <th><h3 class="rate"></h3></th>
+                                        <th><h3 class="rate">Importe</h3></th>
+                                        <td align="right"><h4>$548.00</h4></td>
+                                    </tr>
+
+                                    <tr class="condition">
+                                        <th><h3 class="rate"></h3></th>
+                                        <th><h3 class="rate"></h3></th>
+                                        <th><h3 class="rate">Impuesto</h3></th>
+                                        <td align="right"><h4>$548.00</h4></td>
+                                    </tr>
+
+                                    <tr class="condition">
+                                        <th><h3 class="rate"></h3></th>
+                                        <th><h3 class="rate"></h3></th>
+                                        <th><h3 class="rate">TOTAL</h3></th>
+                                        <td align="right"><h4>$548.00</h4></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="clearfix"></div>
+
+                        </div>
+
+                    </div>*@
+                @*</div>*@
+            </div>
+        </div>
+    </section>
+}
+else
+{
+    Response.Redirect("~/Home/Index");
+
+}

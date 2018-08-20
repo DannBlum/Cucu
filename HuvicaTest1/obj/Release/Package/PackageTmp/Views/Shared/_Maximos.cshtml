@@ -1,0 +1,168 @@
+﻿@model CucuruchoCafe.Models.AdministracionModels
+@using CucuruchoCafe.Models
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+    function Navegacion(valor) {
+        //alert(valor + " " + parseInt($("#contador").val()));
+        if (valor == "back") {
+            var cont = parseInt($("#contador").val());
+            document.getElementById("contador").value = (parseInt(cont) - 10) < 0 ? 0 : (parseInt(cont) - 10);
+        }
+        if (valor == "next") {
+            var cont = parseInt($("#contador").val());
+            document.getElementById("contador").value = (parseInt(cont) + 10);
+        }
+        //alert(valor + " " + parseInt($("#contador").val()));
+    }
+    function resetCount() {
+        document.getElementById("contador").value = "0";
+
+    }
+    function SubmitForm(tam,sku) {
+
+        var count = 0;
+        var i = 0;
+
+        var tam = @Model.maximos.Count();
+
+        if (tam<=0) {
+            alert("No hay información a guardar")
+            return false;
+        }
+
+
+        //for (i= 0; i < tam;i++){
+        //    var val = document.getElementById("C4" + i).value
+        //    if (val.length < 1 || val<=0) {
+        //        count++;
+        //    }
+        //}
+
+        if (count >= tam) {
+            alert("Favor de verificar información");
+            return false;
+        }
+
+
+        var r = confirm("¿Guardar maximos para "+sku+"?");
+        if (r == false) {
+            return false;
+        }
+    }
+
+
+</script>
+<!-- partial -->
+@using (Html.BeginForm("GuardaMaximos", "Administracion", FormMethod.Post))
+{
+<div class="content-wrapper">
+    <h3 class="page-heading mb-4">Lista Maximos</h3>
+    <div class="row mb-2">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    
+                    <div class="form-group">
+                        <label for="Buscador"><h5>Articulo a buscar</h5></label>
+                        <div class="col-lg-12">
+                            <div class="input-group">
+                                @Html.TextBoxFor(m => m.sku, new { type = "text", @class = "form-control p-input", id = "sku", name= "sku", placeholder = "Ingrese articulo a buscar", onclick = "return resetCount();" })
+                                <span class="input-group-btn">
+                                    <button type="submit" name="buscar" class="btn btn-primary btn-lg mr-2">Buscar</button>
+                                </span>
+                            </div><!-- /input-group -->
+                        </div><!-- /.col-lg-6 -->
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table center-aligned-table">
+                            <thead>
+                                <tr class="text-primary">
+                                    <th>#</th>
+                                    @*<th>Linea</th>*@
+                                    <th>Articulo</th>
+                                    <th>Descrip</th>
+                                    <th>Cuauhtemoc (C1)</th>
+                                    <th>Condesa (C2)</th>
+                                    <th>Roma (C3)</th>
+                                    <th>Polanco (C4)</th>
+                                    <th>Casa del Fuego (CF)</th>
+                                    @*<th>Estado</th>*@
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    bool color = false;
+                                    for (int i = 0; i < Model.maximos.Count; i++)
+                                    {
+                                        <tr class="table-success">
+                                            <td>@Html.HiddenFor(m => m.maximos[i].fila)@Model.maximos[i].fila</td>
+                                            <td data-toggle="tooltip" data-placement="top" title="@Model.maximos[i].descrip">@Html.HiddenFor(m => m.maximos[i].sku)@Model.maximos[i].sku</td>
+                                            <td>@Html.HiddenFor(m => m.maximos[i].descrip)@Model.maximos[i].descrip</td>
+                                            <td>@Html.TextBoxFor(m => m.maximos[i].MaxC1, new { type = "number", @class = "form-control p-input", id = "MaxC1" + i, placeholder = "Maximo C1" })</td>
+                                            <td>@Html.TextBoxFor(m => m.maximos[i].MaxC2, new { type = "number", @class = "form-control p-input", id = "MaxC2" + i, placeholder = "Maximo C2" })</td>
+                                            <td>@Html.TextBoxFor(m => m.maximos[i].MaxC3, new { type = "number", @class = "form-control p-input", id = "MaxC3" + i, placeholder = "Maximo C3" })</td>
+                                            <td>@Html.TextBoxFor(m => m.maximos[i].MaxC4, new { type = "number", @class = "form-control p-input", id = "MaxC4" + i, placeholder = "Maximo C4" })</td>
+                                            <td>@Html.TextBoxFor(m => m.maximos[i].MaxCF, new { type = "number", @class = "form-control p-input", id = "MaxCF" + i, placeholder = "Maximo CF" })</td>
+                                            @*<td><label class="badge badge-warning">Approved</label></td>*@
+                                            <td><button type="submit" class="btn btn-success btn-sm" name="maximoXarticulo" value="@Model.maximos[i].sku" onclick="return SubmitForm('@Model.maximos.Count','@Model.maximos[i].sku');">Guardar @Model.maximos[i].sku </button></td>
+                                        </tr>
+                                    }
+                                }
+@if (Model.maximos.Count > 0)
+{
+                                <tr class="table-primary">
+                                    <td>@Model.cuantos</td>
+                                    @*<td></td>*@
+                                    <td></td>
+                                    <td></td>
+                                    <td><button type="submit" class="btn btn-success btn-sm" name="maximoXSucursal" value="Cuauhtemoc" onclick="return SubmitForm('@Model.maximos.Count','Cuauhtemoc');">Guardar maximos<br />de Cuauhtemoc</button></td>
+                                    <td><button type="submit" class="btn btn-success btn-sm" name="maximoXSucursal" value="Condesa" onclick="return SubmitForm('@Model.maximos.Count','Condesa');">Guardar maximos<br />de Condesa</button></td>
+                                    <td><button type="submit" class="btn btn-success btn-sm" name="maximoXSucursal" value="Roma" onclick="return SubmitForm('@Model.maximos.Count','Roma');">Guardar maximos<br />de Roma</button></td>
+                                    <td><button type="submit" class="btn btn-success btn-sm" name="maximoXSucursal" value="Polanco" onclick="return SubmitForm('@Model.maximos.Count','Polanco');">Guardar maximos<br />de Polanco</button></td>
+                                    <td><button type="submit" class="btn btn-success btn-sm" name="maximoXSucursal" value="CasaDeFuego" onclick="return SubmitForm('@Model.maximos.Count','Casa De Fuego');">Guardar maximos<br />de Casa de Fuego</button></td>
+                                    <td></td>
+
+                                    @*<td><a href="#" class="btn btn-danger btn-sm">Remove</a></td>*@
+                                </tr>
+}
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <center>
+                        @if (Model.maximos.Count > 0)
+                        {
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-lg mr-2" name="maximoTotal" value="maximoTotal" onclick="return SubmitForm(@Model.maximos.Count,'Todas las sucursales');">Guardar maximos</button>
+                        </div>
+                        }
+                        <table>
+                            <tr>
+                                <td><button style="font-size:25px" name="navegar" value="back" class="btn btn-outline-primary mr-2" onclick="Navegacion(this.value);"><i class="fa fa-arrow-circle-left"></i></button></td>
+                                <td>
+                                    <div>
+
+                                        @Html.HiddenFor(m => m.contador, new { name = "contador", value = Model.contador })
+                                    </div>
+                                </td>
+@if (Model.maximos.Count >= 10)
+{
+                                <td><button style="font-size:25px" name="navegar" value="next" class="btn btn-outline-primary mr-2" onclick="Navegacion(this.value);"><i class="fa fa-arrow-circle-right"></i></button></td>
+}
+                            </tr>
+
+                        </table>
+                    </center>
+                                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+                                    }
