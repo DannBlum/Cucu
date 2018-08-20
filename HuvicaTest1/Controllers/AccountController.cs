@@ -217,6 +217,7 @@ namespace CucuruchoWeb.Controllers
         {
             if (ModelState.IsValid)
             {
+                //Linea Comentada
                 var user = await UserManager.FindByNameAsync(model.Email);
                 if (user == null || !(await UserManager.IsEmailConfirmedAsync(user.Id)))
                 {
